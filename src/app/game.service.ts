@@ -10,7 +10,7 @@ export class GameService {
   userName:string;
   constructor() { }
   
-  addPlay=(play)=>{this.plays.push(play);console.log(this.plays,this.userName); }
+  addPlay=(play)=>{this.plays.push(play); }
   setUserName=(name)=>this.userName=name;
   getAllPlaysNumber=()=>this.plays.length;
 
