@@ -8,8 +8,8 @@ import { MyGamesComponent } from './my-games/my-games.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/greet', pathMatch: 'full' },
-  { path: 'greet', component: GreetComponent },
-  { path: 'game', component: StartGameComponent },
+  { path: 'greet', component: GreetComponent , data: {animation: 'GreetPage'}},
+  { path: 'game', component: StartGameComponent , data: {animation: 'GamePage'}},
   { path: 'finish', component: EndGameComponent },
   { path: 'myGames', component: MyGamesComponent }
 ];

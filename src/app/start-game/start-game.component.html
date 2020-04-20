@@ -1,17 +1,10 @@
-<!-- <p>start-game works!</p>
-<div *ngIf="!gameStarted && !gameOver">
-    <app-greet (notify)='greetUser($event)' >
-      
-    </app-greet>
-    <button *ngIf="greetedUser" (click)="start()" >Start the game</button>
-   
-</div> -->
-
-<button *ngIf="!gameStarted" (click)="start()" >Start the timer</button>
+<a *ngIf="!gameStarted" (click)="start()"><span></span>
+    <span></span>
+    <span></span>
+    <span></span>Start the timer</a>
 
 <div *ngIf="gameStarted">
-    <h1 >Time left:{{seconds}}</h1>
-    <button (click)="countClick()">Click</button>
-    <h1>{{clickCounter}}</h1>
-    
+  <h1>Time left:{{ seconds }}</h1>
+  <button (click)="countClick()">Click</button>
+  <h1>{{ clickCounter }}</h1>
 </div>
